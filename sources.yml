@@ -1,0 +1,1921 @@
+settings:
+  purpose: One final strict ICP CSV only. Failed/blocked sources are skipped. Strict
+    output requires headcount 10-200 + proven worldwide remote + no restriction.
+sources:
+- name: Remotive API Engineering Bundle
+  type: remotive_api
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_board
+  categories:
+  - software-dev
+  - devops-sysadmin
+  - data
+  limit: 500
+  delay_seconds: 1.0
+- name: Jobicy API Engineering Bundle
+  type: jobicy_api
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_board
+  industries:
+  - engineering
+  - software-development
+  - devops-sysadmin
+  limit: 50
+  delay_seconds: 1.0
+- name: RemoteOK Public API
+  type: remoteok_api
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_board
+  delay_seconds: 2.0
+- name: Arbeitnow Remote API
+  type: arbeitnow_api
+  enabled: true
+  trust_score: 4
+  source_type_label: aggregator_api
+  max_pages: 10
+  delay_seconds: 1.0
+- name: Himalayas Remote API
+  type: himalayas_api
+  enabled: true
+  trust_score: 7
+  source_type_label: trusted_remote_board
+  queries:
+  - backend engineer
+  - frontend engineer
+  - full stack engineer
+  - software engineer
+  - devops engineer
+  - platform engineer
+  - site reliability engineer
+  - qa automation engineer
+  - data engineer
+  - machine learning engineer
+  - mobile engineer
+  - python developer
+  - react developer
+  - node developer
+  limit: 100
+  delay_seconds: 1.0
+- name: WeWorkRemotely Programming RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely DevOps RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely Fullstack RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-full-stack-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely Backend RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-back-end-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WeWorkRemotely Frontend RSS
+  type: rss
+  enabled: true
+  trust_score: 6
+  source_type_label: trusted_remote_rss
+  url: https://weworkremotely.com/categories/remote-front-end-programming-jobs.rss
+  title_format: company_colon_title
+  default_location: Remote
+  delay_seconds: 1.0
+- name: Python.org Remote Jobs RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://www.python.org/jobs/feed/rss/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: Remote.co Programming RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://remote.co/remote-jobs/developer/feed/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: WorkingNomads Development RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://www.workingnomads.com/jobsapi/xml/remote-development-jobs
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: NoDesk Remote Jobs RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://nodesk.co/remote-jobs/rss/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: FreshRemote Developer RSS
+  type: rss
+  enabled: true
+  trust_score: 5
+  source_type_label: trusted_remote_rss
+  url: https://freshremote.work/feed/
+  title_format: plain
+  default_location: Remote
+  delay_seconds: 1.0
+- name: Ashby Cal.com
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: cal.com
+  company_name: Cal.com
+  company_domain: cal.com
+  company_website: https://cal.com
+  company_meta:
+    company_domain: cal.com
+    company_website: https://cal.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Resend
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: resend
+  company_name: Resend
+  company_domain: resend.com
+  company_website: https://resend.com
+  company_meta:
+    company_domain: resend.com
+    company_website: https://resend.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Convex
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: convex
+  company_name: Convex
+  company_domain: convex.dev
+  company_website: https://convex.dev
+  company_meta:
+    company_domain: convex.dev
+    company_website: https://convex.dev
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Raycast
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: raycast
+  company_name: Raycast
+  company_domain: raycast.com
+  company_website: https://raycast.com
+  company_meta:
+    company_domain: raycast.com
+    company_website: https://raycast.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Browserbase
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: browserbase
+  company_name: Browserbase
+  company_domain: browserbase.com
+  company_website: https://browserbase.com
+  company_meta:
+    company_domain: browserbase.com
+    company_website: https://browserbase.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Clerk
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: clerk
+  company_name: Clerk
+  company_domain: clerk.com
+  company_website: https://clerk.com
+  company_meta:
+    company_domain: clerk.com
+    company_website: https://clerk.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Deno
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: deno
+  company_name: Deno
+  company_domain: deno.com
+  company_website: https://deno.com
+  company_meta:
+    company_domain: deno.com
+    company_website: https://deno.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Inngest
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: inngest
+  company_name: Inngest
+  company_domain: inngest.com
+  company_website: https://inngest.com
+  company_meta:
+    company_domain: inngest.com
+    company_website: https://inngest.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Modal
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: modal
+  company_name: Modal
+  company_domain: modal.com
+  company_website: https://modal.com
+  company_meta:
+    company_domain: modal.com
+    company_website: https://modal.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Railway
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: railway
+  company_name: Railway
+  company_domain: railway.app
+  company_website: https://railway.app
+  company_meta:
+    company_domain: railway.app
+    company_website: https://railway.app
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Cloud infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Trigger.dev
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: trigger.dev
+  company_name: Trigger.dev
+  company_domain: trigger.dev
+  company_website: https://trigger.dev
+  company_meta:
+    company_domain: trigger.dev
+    company_website: https://trigger.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Unkey
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: unkey
+  company_name: Unkey
+  company_domain: unkey.com
+  company_website: https://unkey.com
+  company_meta:
+    company_domain: unkey.com
+    company_website: https://unkey.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Qdrant
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: qdrant
+  company_name: Qdrant
+  company_domain: qdrant.tech
+  company_website: https://qdrant.tech
+  company_meta:
+    company_domain: qdrant.tech
+    company_website: https://qdrant.tech
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Germany
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Replicate
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: replicate
+  company_name: Replicate
+  company_domain: replicate.com
+  company_website: https://replicate.com
+  company_meta:
+    company_domain: replicate.com
+    company_website: https://replicate.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Fireworks AI
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: fireworks
+  company_name: Fireworks AI
+  company_domain: fireworks.ai
+  company_website: https://fireworks.ai
+  company_meta:
+    company_domain: fireworks.ai
+    company_website: https://fireworks.ai
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Together AI
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: together-ai
+  company_name: Together AI
+  company_domain: together.ai
+  company_website: https://together.ai
+  company_meta:
+    company_domain: together.ai
+    company_website: https://together.ai
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby LangChain
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: langchain
+  company_name: LangChain
+  company_domain: langchain.com
+  company_website: https://langchain.com
+  company_meta:
+    company_domain: langchain.com
+    company_website: https://langchain.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: AI developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Mintlify
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: mintlify
+  company_name: Mintlify
+  company_domain: mintlify.com
+  company_website: https://mintlify.com
+  company_meta:
+    company_domain: mintlify.com
+    company_website: https://mintlify.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Plane
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: plane
+  company_name: Plane
+  company_domain: plane.so
+  company_website: https://plane.so
+  company_meta:
+    company_domain: plane.so
+    company_website: https://plane.so
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Neon
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: neon
+  company_name: Neon
+  company_domain: neon.tech
+  company_website: https://neon.tech
+  company_meta:
+    company_domain: neon.tech
+    company_website: https://neon.tech
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby WorkOS
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: workos
+  company_name: WorkOS
+  company_domain: workos.com
+  company_website: https://workos.com
+  company_meta:
+    company_domain: workos.com
+    company_website: https://workos.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Ashby Zed
+  type: ashby
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: zed
+  company_name: Zed
+  company_domain: zed.dev
+  company_website: https://zed.dev
+  company_meta:
+    company_domain: zed.dev
+    company_website: https://zed.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Airbyte
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: airbyte
+  company_name: Airbyte
+  company_domain: airbyte.com
+  company_website: https://airbyte.com
+  company_meta:
+    company_domain: airbyte.com
+    company_website: https://airbyte.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Census
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: census
+  company_name: Census
+  company_domain: getcensus.com
+  company_website: https://getcensus.com
+  company_meta:
+    company_domain: getcensus.com
+    company_website: https://getcensus.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Dagster
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: dagster
+  company_name: Dagster
+  company_domain: dagster.io
+  company_website: https://dagster.io
+  company_meta:
+    company_domain: dagster.io
+    company_website: https://dagster.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Gitpod
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: gitpod
+  company_name: Gitpod
+  company_domain: gitpod.io
+  company_website: https://gitpod.io
+  company_meta:
+    company_domain: gitpod.io
+    company_website: https://gitpod.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Honeycomb
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: honeycomb
+  company_name: Honeycomb
+  company_domain: honeycomb.io
+  company_website: https://honeycomb.io
+  company_meta:
+    company_domain: honeycomb.io
+    company_website: https://honeycomb.io
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Linear
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: linear
+  company_name: Linear
+  company_domain: linear.app
+  company_website: https://linear.app
+  company_meta:
+    company_domain: linear.app
+    company_website: https://linear.app
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Metabase
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: metabase
+  company_name: Metabase
+  company_domain: metabase.com
+  company_website: https://metabase.com
+  company_meta:
+    company_domain: metabase.com
+    company_website: https://metabase.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Prefect
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: prefect
+  company_name: Prefect
+  company_domain: prefect.io
+  company_website: https://prefect.io
+  company_meta:
+    company_domain: prefect.io
+    company_website: https://prefect.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Render
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: render
+  company_name: Render
+  company_domain: render.com
+  company_website: https://render.com
+  company_meta:
+    company_domain: render.com
+    company_website: https://render.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Cloud infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Redpanda
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: redpanda
+  company_name: Redpanda
+  company_domain: redpanda.com
+  company_website: https://redpanda.com
+  company_meta:
+    company_domain: redpanda.com
+    company_website: https://redpanda.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Semgrep
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: semgrep
+  company_name: Semgrep
+  company_domain: semgrep.dev
+  company_website: https://semgrep.dev
+  company_meta:
+    company_domain: semgrep.dev
+    company_website: https://semgrep.dev
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Security SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Spacelift
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: spacelift
+  company_name: Spacelift
+  company_domain: spacelift.io
+  company_website: https://spacelift.io
+  company_meta:
+    company_domain: spacelift.io
+    company_website: https://spacelift.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: DevOps SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Stytch
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: stytch
+  company_name: Stytch
+  company_domain: stytch.com
+  company_website: https://stytch.com
+  company_meta:
+    company_domain: stytch.com
+    company_website: https://stytch.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Svix
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: svix
+  company_name: Svix
+  company_domain: svix.com
+  company_website: https://svix.com
+  company_meta:
+    company_domain: svix.com
+    company_website: https://svix.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Tailscale
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: tailscale
+  company_name: Tailscale
+  company_domain: tailscale.com
+  company_website: https://tailscale.com
+  company_meta:
+    company_domain: tailscale.com
+    company_website: https://tailscale.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Canada
+    company_type: Cloud infrastructure
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Temporal
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: temporal
+  company_name: Temporal
+  company_domain: temporal.io
+  company_website: https://temporal.io
+  company_meta:
+    company_domain: temporal.io
+    company_website: https://temporal.io
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Turso
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: turso
+  company_name: Turso
+  company_domain: turso.tech
+  company_website: https://turso.tech
+  company_meta:
+    company_domain: turso.tech
+    company_website: https://turso.tech
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Windmill
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: windmill
+  company_name: Windmill
+  company_domain: windmill.dev
+  company_website: https://windmill.dev
+  company_meta:
+    company_domain: windmill.dev
+    company_website: https://windmill.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: France
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse GrowthBook
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: growthbook
+  company_name: GrowthBook
+  company_domain: growthbook.io
+  company_website: https://growthbook.io
+  company_meta:
+    company_domain: growthbook.io
+    company_website: https://growthbook.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Incident.io
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: incident-io
+  company_name: Incident.io
+  company_domain: incident.io
+  company_website: https://incident.io
+  company_meta:
+    company_domain: incident.io
+    company_website: https://incident.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United Kingdom
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Orb
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: orb
+  company_name: Orb
+  company_domain: withorb.com
+  company_website: https://withorb.com
+  company_meta:
+    company_domain: withorb.com
+    company_website: https://withorb.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Permit.io
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: permit-io
+  company_name: Permit.io
+  company_domain: permit.io
+  company_website: https://permit.io
+  company_meta:
+    company_domain: permit.io
+    company_website: https://permit.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse SigNoz
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: signoz
+  company_name: SigNoz
+  company_domain: signoz.io
+  company_website: https://signoz.io
+  company_meta:
+    company_domain: signoz.io
+    company_website: https://signoz.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Greenhouse Speakeasy
+  type: greenhouse
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: speakeasy
+  company_name: Speakeasy
+  company_domain: speakeasy.com
+  company_website: https://speakeasy.com
+  company_meta:
+    company_domain: speakeasy.com
+    company_website: https://speakeasy.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Slab
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: slab
+  company_name: Slab
+  company_domain: slab.com
+  company_website: https://slab.com
+  company_meta:
+    company_domain: slab.com
+    company_website: https://slab.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Tremendous
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: tremendous
+  company_name: Tremendous
+  company_domain: tremendous.com
+  company_website: https://tremendous.com
+  company_meta:
+    company_domain: tremendous.com
+    company_website: https://tremendous.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Leapsome
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: leapsome
+  company_name: Leapsome
+  company_domain: leapsome.com
+  company_website: https://leapsome.com
+  company_meta:
+    company_domain: leapsome.com
+    company_website: https://leapsome.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Germany
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Expensify
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: expensify
+  company_name: Expensify
+  company_domain: expensify.com
+  company_website: https://expensify.com
+  company_meta:
+    company_domain: expensify.com
+    company_website: https://expensify.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Nauto
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: nauto
+  company_name: Nauto
+  company_domain: nauto.com
+  company_website: https://nauto.com
+  company_meta:
+    company_domain: nauto.com
+    company_website: https://nauto.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: AI SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever NinjaTrader
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: ninjatrader
+  company_name: NinjaTrader
+  company_domain: ninjatrader.com
+  company_website: https://ninjatrader.com
+  company_meta:
+    company_domain: ninjatrader.com
+    company_website: https://ninjatrader.com
+    headcount_bucket: 201 to 500
+    headcount_estimate: 201 to 500
+    hq_country: United States
+    company_type: Fintech SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Qatalog
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: qatalog
+  company_name: Qatalog
+  company_domain: qatalog.com
+  company_website: https://qatalog.com
+  company_meta:
+    company_domain: qatalog.com
+    company_website: https://qatalog.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: SaaS
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Lever Replit
+  type: lever
+  enabled: true
+  trust_score: 10
+  source_type_label: official_ats
+  board: replit
+  company_name: Replit
+  company_domain: replit.com
+  company_website: https://replit.com
+  company_meta:
+    company_domain: replit.com
+    company_website: https://replit.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+  delay_seconds: 0.8
+- name: Career Discovery Lago
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Lago
+  company_domain: getlago.com
+  company_website: https://getlago.com
+  career_url: https://www.getlago.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Lago
+    company_domain: getlago.com
+    company_website: https://getlago.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: France
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Infisical
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Infisical
+  company_domain: infisical.com
+  company_website: https://infisical.com
+  career_url: https://infisical.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Infisical
+    company_domain: infisical.com
+    company_website: https://infisical.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Tinybird
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Tinybird
+  company_domain: tinybird.co
+  company_website: https://tinybird.co
+  career_url: https://www.tinybird.co/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Tinybird
+    company_domain: tinybird.co
+    company_website: https://tinybird.co
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+- name: Career Discovery Axiom
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Axiom
+  company_domain: axiom.co
+  company_website: https://axiom.co
+  career_url: https://axiom.co/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Axiom
+    company_domain: axiom.co
+    company_website: https://axiom.co
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+- name: Career Discovery Plausible
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Plausible
+  company_domain: plausible.io
+  company_website: https://plausible.io
+  career_url: https://plausible.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Plausible
+    company_domain: plausible.io
+    company_website: https://plausible.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Estonia
+    company_type: Analytics SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Doppler
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Doppler
+  company_domain: doppler.com
+  company_website: https://doppler.com
+  career_url: https://www.doppler.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Doppler
+    company_domain: doppler.com
+    company_website: https://doppler.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Arcjet
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Arcjet
+  company_domain: arcjet.com
+  company_website: https://arcjet.com
+  career_url: https://arcjet.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Arcjet
+    company_domain: arcjet.com
+    company_website: https://arcjet.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Security developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery ElectricSQL
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: ElectricSQL
+  company_domain: electric-sql.com
+  company_website: https://electric-sql.com
+  career_url: https://electric-sql.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: ElectricSQL
+    company_domain: electric-sql.com
+    company_website: https://electric-sql.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Baserow
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Baserow
+  company_domain: baserow.io
+  company_website: https://baserow.io
+  career_url: https://baserow.io/jobs
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Baserow
+    company_domain: baserow.io
+    company_website: https://baserow.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Netherlands
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Meilisearch
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Meilisearch
+  company_domain: meilisearch.com
+  company_website: https://meilisearch.com
+  career_url: https://www.meilisearch.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Meilisearch
+    company_domain: meilisearch.com
+    company_website: https://meilisearch.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: France
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Mattermost
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Mattermost
+  company_domain: mattermost.com
+  company_website: https://mattermost.com
+  career_url: https://mattermost.com/careers/
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Mattermost
+    company_domain: mattermost.com
+    company_website: https://mattermost.com
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Flagsmith
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Flagsmith
+  company_domain: flagsmith.com
+  company_website: https://flagsmith.com
+  career_url: https://www.flagsmith.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Flagsmith
+    company_domain: flagsmith.com
+    company_website: https://flagsmith.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery QuestDB
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: QuestDB
+  company_domain: questdb.io
+  company_website: https://questdb.io
+  career_url: https://questdb.io/careers/
+  delay_seconds: 0.4
+  company_meta:
+    company_name: QuestDB
+    company_domain: questdb.io
+    company_website: https://questdb.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United Kingdom
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+- name: Career Discovery Directus
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Directus
+  company_domain: directus.io
+  company_website: https://directus.io
+  career_url: https://directus.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Directus
+    company_domain: directus.io
+    company_website: https://directus.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Appwrite
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Appwrite
+  company_domain: appwrite.io
+  company_website: https://appwrite.io
+  career_url: https://appwrite.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Appwrite
+    company_domain: appwrite.io
+    company_website: https://appwrite.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Novu
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Novu
+  company_domain: novu.co
+  company_website: https://novu.co
+  career_url: https://novu.co/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Novu
+    company_domain: novu.co
+    company_website: https://novu.co
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Israel
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Unleash
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Unleash
+  company_domain: getunleash.io
+  company_website: https://getunleash.io
+  career_url: https://www.getunleash.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Unleash
+    company_domain: getunleash.io
+    company_website: https://getunleash.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Norway
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Postman smaller teams
+  type: company_career
+  enabled: false
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Postman smaller teams
+  company_domain: postman.com
+  company_website: https://postman.com
+  career_url: https://www.postman.com/company/careers/
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Postman smaller teams
+    company_domain: postman.com
+    company_website: https://postman.com
+    headcount_bucket: 501 plus
+    headcount_estimate: 501 plus
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Crisp
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Crisp
+  company_domain: crisp.chat
+  company_website: https://crisp.chat
+  career_url: https://crisp.chat/en/jobs/
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Crisp
+    company_domain: crisp.chat
+    company_website: https://crisp.chat
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: France
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Tella
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Tella
+  company_domain: tella.tv
+  company_website: https://tella.tv
+  career_url: https://www.tella.tv/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Tella
+    company_domain: tella.tv
+    company_website: https://tella.tv
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Netherlands
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Softr
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Softr
+  company_domain: softr.io
+  company_website: https://softr.io
+  career_url: https://www.softr.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Softr
+    company_domain: softr.io
+    company_website: https://softr.io
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Germany
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Rows
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Rows
+  company_domain: rows.com
+  company_website: https://rows.com
+  career_url: https://rows.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Rows
+    company_domain: rows.com
+    company_website: https://rows.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Portugal
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Typebot
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Typebot
+  company_domain: typebot.io
+  company_website: https://typebot.io
+  career_url: https://www.typebot.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Typebot
+    company_domain: typebot.io
+    company_website: https://typebot.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: France
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Dub
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Dub
+  company_domain: dub.co
+  company_website: https://dub.co
+  career_url: https://dub.co/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Dub
+    company_domain: dub.co
+    company_website: https://dub.co
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Highlight
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Highlight
+  company_domain: highlight.io
+  company_website: https://highlight.io
+  career_url: https://www.highlight.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Highlight
+    company_domain: highlight.io
+    company_website: https://highlight.io
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery OpenStatus
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: OpenStatus
+  company_domain: openstatus.dev
+  company_website: https://openstatus.dev
+  career_url: https://www.openstatus.dev/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: OpenStatus
+    company_domain: openstatus.dev
+    company_website: https://openstatus.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Twenty
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Twenty
+  company_domain: twenty.com
+  company_website: https://twenty.com
+  career_url: https://twenty.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Twenty
+    company_domain: twenty.com
+    company_website: https://twenty.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: France
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Frappe
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Frappe
+  company_domain: frappe.io
+  company_website: https://frappe.io
+  career_url: https://frappe.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Frappe
+    company_domain: frappe.io
+    company_website: https://frappe.io
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: India
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Medusa
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Medusa
+  company_domain: medusajs.com
+  company_website: https://medusajs.com
+  career_url: https://medusajs.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Medusa
+    company_domain: medusajs.com
+    company_website: https://medusajs.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: Denmark
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Wasp
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Wasp
+  company_domain: wasp-lang.dev
+  company_website: https://wasp-lang.dev
+  career_url: https://wasp-lang.dev/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Wasp
+    company_domain: wasp-lang.dev
+    company_website: https://wasp-lang.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Croatia
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Prisma
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Prisma
+  company_domain: prisma.io
+  company_website: https://prisma.io
+  career_url: https://www.prisma.io/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Prisma
+    company_domain: prisma.io
+    company_website: https://prisma.io
+    headcount_bucket: 101 to 200
+    headcount_estimate: 101 to 200
+    hq_country: Germany
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Nx
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Nx
+  company_domain: nx.dev
+  company_website: https://nx.dev
+  career_url: https://nx.dev/company/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Nx
+    company_domain: nx.dev
+    company_website: https://nx.dev
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery StackBlitz
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: StackBlitz
+  company_domain: stackblitz.com
+  company_website: https://stackblitz.com
+  career_url: https://stackblitz.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: StackBlitz
+    company_domain: stackblitz.com
+    company_website: https://stackblitz.com
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Tigris Data
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Tigris Data
+  company_domain: tigrisdata.com
+  company_website: https://tigrisdata.com
+  career_url: https://www.tigrisdata.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Tigris Data
+    company_domain: tigrisdata.com
+    company_website: https://tigrisdata.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Data infrastructure
+    target_market_fit: 'yes'
+- name: Career Discovery Warp
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Warp
+  company_domain: warp.dev
+  company_website: https://warp.dev
+  career_url: https://www.warp.dev/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Warp
+    company_domain: warp.dev
+    company_website: https://warp.dev
+    headcount_bucket: 51 to 100
+    headcount_estimate: 51 to 100
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Airtable smaller roles
+  type: company_career
+  enabled: false
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Airtable smaller roles
+  company_domain: airtable.com
+  company_website: https://airtable.com
+  career_url: https://www.airtable.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Airtable smaller roles
+    company_domain: airtable.com
+    company_website: https://airtable.com
+    headcount_bucket: 501 plus
+    headcount_estimate: 501 plus
+    hq_country: United States
+    company_type: SaaS
+    target_market_fit: 'yes'
+- name: Career Discovery Firecrawl
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Firecrawl
+  company_domain: firecrawl.dev
+  company_website: https://firecrawl.dev
+  career_url: https://www.firecrawl.dev/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Firecrawl
+    company_domain: firecrawl.dev
+    company_website: https://firecrawl.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: AI developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Langfuse
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Langfuse
+  company_domain: langfuse.com
+  company_website: https://langfuse.com
+  career_url: https://langfuse.com/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Langfuse
+    company_domain: langfuse.com
+    company_website: https://langfuse.com
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: Germany
+    company_type: AI developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Helicone
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Helicone
+  company_domain: helicone.ai
+  company_website: https://helicone.ai
+  career_url: https://www.helicone.ai/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Helicone
+    company_domain: helicone.ai
+    company_website: https://helicone.ai
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: AI developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery Braintrust
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Braintrust
+  company_domain: braintrust.dev
+  company_website: https://braintrust.dev
+  career_url: https://www.braintrust.dev/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Braintrust
+    company_domain: braintrust.dev
+    company_website: https://braintrust.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: AI developer tools
+    target_market_fit: 'yes'
+- name: Career Discovery E2B
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: E2B
+  company_domain: e2b.dev
+  company_website: https://e2b.dev
+  career_url: https://e2b.dev/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: E2B
+    company_domain: e2b.dev
+    company_website: https://e2b.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: AI infrastructure
+    target_market_fit: 'yes'
+- name: Career Discovery Nango
+  type: company_career
+  enabled: true
+  trust_score: 9
+  source_type_label: official_company_career_discovery
+  company_name: Nango
+  company_domain: nango.dev
+  company_website: https://nango.dev
+  career_url: https://www.nango.dev/careers
+  delay_seconds: 0.4
+  company_meta:
+    company_name: Nango
+    company_domain: nango.dev
+    company_website: https://nango.dev
+    headcount_bucket: 10 to 50
+    headcount_estimate: 10 to 50
+    hq_country: United States
+    company_type: Developer tools
+    target_market_fit: 'yes'
